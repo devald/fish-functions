@@ -14,6 +14,7 @@ function music-dl
                --restrict-filenames \
                --ignore-errors \
                --no-mtime \
+               --no-cache-dir \
                --output "$FOLDER/%(title)s.%(ext)s" \
                {} < $argv
   end
